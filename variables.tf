@@ -2,14 +2,14 @@
 variable "vpc_id" {
   type        = string
   description = "provide vpc id"
-  default = "vpc-08b0c56cb29df4c44"
+  default = "vpc-vpc-0d55b90ab847cff00"
 }
 
 # EC2 Web Server Variables
 variable "ami" {
   type        = string
   description = "provide an ubuntu or debian ami"
-  default = "ami-0e001c9271cf7f3b9"
+  default = "ami-0360c520857e3138f"
 }
 
 variable "instance_type" {
@@ -21,13 +21,13 @@ variable "instance_type" {
 variable "subnet_id" {
   type        = string
   description = "provide subnet id from your Default VPC"
-  default = "subnet-054b0151e579484e5"
+  default = "subnet-0679a7955708b8dd8"
 }
 
 variable "key_name" {
   type        = string
   description = "provide an existing keypair"
-  default = "mbandiofficial-nova"
+  default = "North.Virginia-Key"
 }
 
 variable "user_data" {
