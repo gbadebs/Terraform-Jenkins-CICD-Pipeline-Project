@@ -31,7 +31,18 @@ pipeline {
                 sh 'terraform plan'
             }
         }
-        // Deployment Apporval
+        // Checkov Infrastructure Automation Test
+
+        stage('Checkov scan') {
+
+            steps {
+
+                sh 'checkov -d .'
+
+            }
+
+        }
+        // Deployment Apporoval
         stage('Manual Approval') {
             steps {
                 input 'Approval Infra Deployment'
